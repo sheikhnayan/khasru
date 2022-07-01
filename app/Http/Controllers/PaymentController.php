@@ -7,6 +7,7 @@ use App\Models\Cart;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Omnipay\Omnipay;
+use Auth;
 
 class PaymentController extends Controller
 {
@@ -67,14 +68,16 @@ class PaymentController extends Controller
                 $payment->save();
 
                 $data = Cart::where('user_id', Auth::user()->id)->latest()->get();
-
+                // dd($data);
                 $order = new Order();
-                $order->user_id = $data->user_id;
+                $order->user_id = $data[0]->user_id;
                 $order->document_id = $data[0]->document->id;
                 $order->payment_method = 'paypal';
                 $order->amount = $data[0]->document->price;
 
-                $order->save();
+                if ($order->save()) {
+                    echo 'Order saved!';
+                }
 
                 return "Payment is Successfull. Your Transaction Id is : " . $arr['id'];
 
