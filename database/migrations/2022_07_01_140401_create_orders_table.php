@@ -18,8 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('user_id')->nullable();
             $table->string('document_id')->nullable();
             $table->string('payment_method')->nullable();
-            $table->string('amount');
-            $table->string();
+            $table->string('amount')->nullable();
             $table->timestamps();
         });
     }

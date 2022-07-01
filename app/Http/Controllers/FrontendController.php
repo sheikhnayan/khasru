@@ -152,6 +152,8 @@ class FrontendController extends Controller
     {
         $data = Cart::where('user_id', Auth::user()->id)->latest()->get();
 
+        dd($data[0]->document);
+
         return view('frontend.cart',compact('data'));
     }
 

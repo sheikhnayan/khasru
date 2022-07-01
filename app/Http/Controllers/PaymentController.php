@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Payment;
 use App\Models\Cart;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Omnipay\Omnipay;
 
@@ -67,7 +68,13 @@ class PaymentController extends Controller
 
                 $data = Cart::where('user_id', Auth::user()->id)->latest()->get();
 
+                $order = new Order();
+                $order->user_id = $data->user_id;
+                $order->document_id = $data[0]->document->id;
+                $order->payment_method = 'paypal';
+                $order->amount = $data[0]->document->price;
 
+                $order->save();
 
                 return "Payment is Successfull. Your Transaction Id is : " . $arr['id'];
 
