@@ -41,7 +41,10 @@ Route::get('/addtocart/{id}',[FrontendController::class,'addtocart'])->name('add
 Route::get('/removefromcart/{id}',[FrontendController::class,'removefromcart'])->name('removefromcart')->middleware('auth');
 
 
-
+//PAYPAL ROUTES
+Route::post('pay', [App\Http\Controllers\PaymentController::class, 'pay'])->name('payment');
+Route::get('success', [App\Http\Controllers\PaymentController::class, 'success']);
+Route::get('error', [App\Http\Controllers\PaymentController::class, 'error']);
 
 
 

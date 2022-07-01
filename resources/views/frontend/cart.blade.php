@@ -39,19 +39,27 @@
                     </div>
                     <!-- End Tabs on plain Card -->
                 </div>
+
                 <div class="col-md-5 ml-auto mr-auto">
                     <p class="category" style="font-weight: bold; font-size: 20px; padding: 10px;">Choose your payment method</p>
                     <div class="card">
                       <div class="card-body">
                         <ul>
-                            <li class="mt-3 mb-3" style="display: block; border: 1px solid black; padding: 12px;">
-                                <input type="radio"  name="paypal" id="paypal">
-                                <label for="paypal">Paypal</label>
-                            </li>
-    
-                            <li class="mt-3 mb-3" style="display: block; padding: 12px;">
-                                <a href="/payment" class="btn btn-success">Pay Now (${{ $total }})</a>
-                            </li>
+                            <form action="{{ route('payment') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="amount" value="{{$total}}">
+
+                                <li class="mt-3 mb-3" style="display: block; border: 1px solid black; padding: 12px;">
+                                    <input type="radio"  name="paypal" id="paypal">
+                                    <label for="paypal">Paypal</label>
+                                </li>
+        
+                                <li class="mt-3 mb-3" style="display: block; padding: 12px;">
+                                    <button type="submit" class="btn btn-success">
+                                        Pay Now (${{ $total }})
+                                    </button>
+                                </li>
+                            </form>
                         </ul>
                       </div>
                     </div>
