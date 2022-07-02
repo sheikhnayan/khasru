@@ -47,8 +47,7 @@ Route::get('success', [App\Http\Controllers\PaymentController::class, 'success']
 Route::get('error', [App\Http\Controllers\PaymentController::class, 'error']);
 
 //DOWNLOAD ROUTES
-Route::get('downloads', [App\Http\Controllers\DownloadController::class, 'downloads']);
-
+Route::get('downloads', [App\Http\Controllers\DownloadController::class, 'index']);
 
 ##Frontend Routes
 

@@ -5,6 +5,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 ml-auto mr-auto">
+                    @if (Session::has('message'))
+                        <div class="alert alert-success text-center">{{ Session::get('message') }}</div>
+                    @endif
+                    @if (Session::has('error'))
+                        <div class="alert alert-danger text-center">{{ Session::get('error') }}</div>
+                    @endif
                     <p class="category" style="font-weight: bold; font-size: 20px; padding: 10px;">Shopping Cart</p>
                     <div class="card">
                       <div class="card-body">

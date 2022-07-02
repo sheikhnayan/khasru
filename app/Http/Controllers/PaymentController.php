@@ -77,8 +77,9 @@ class PaymentController extends Controller
 
                 if ($order->save()) {
                     echo 'Order saved!';
+                    // return redirect()->route('cart')->with('Success', 'Payment is Successfull. Your Transaction Id is' . $arr['id']);
                 }
-
+                
                 return "Payment is Successfull. Your Transaction Id is : " . $arr['id'];
 
             }
