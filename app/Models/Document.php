@@ -33,4 +33,9 @@ class Document extends Model
     {
         return $this->hasMany(Review::class);
     }
+
+    public function download()
+    {
+        return $this->hasMany(Order::class);
+    }
 }

@@ -188,10 +188,10 @@
                         @foreach ($trending as $item)
                             <div class="right-content">
                                 <div class="fp1">
-                                    <form action="">
+                                    <a href="{{ route('product',[$item->id]) }}">
                                         <h3>{{ $item->title }}</h3>
                                         <p>{{ $item->category->name }} <span>${{ $item->price }}</span></p>
-                                    </form>
+                                    </a>
                                 </div>
                             </div>
                         @endforeach
@@ -278,10 +278,12 @@
 
                 @foreach ($items as $item)
                 
-                        <form action="">
+                        <a href="{{ route('product',[$item->id]) }}">
+                        <form>
                             <h3>{{ $item->title }}</h3>
                             <p>{{ $item->subject->name }}</p>
                         </form>
+                        </a>
                             
                 @endforeach
                         </div>

@@ -34,9 +34,9 @@
 
 <div class="owl-carousel owl-theme">
     <div class="item">
-        <div class="container">
-            <div class="row">
-                <div class="col ">
+        {{-- <div class="container"> --}}
+            {{-- <div class="row"> --}}
+                {{-- <div class="col "> --}}
                     <div class="card justify-content-center align-items-center">
                         <div class="discription">
                             <p>Docmerit is a great platform to get and share study resources, especially the resource contributed by past students and who have done similar courses.</p>
@@ -51,14 +51,14 @@
                             <p>Karen</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
     </div>
     <div class="item">
-        <div class="container">
-            <div class="row">
-                <div class="col ">
+        {{-- <div class="container"> --}}
+            {{-- <div class="row"> --}}
+                {{-- <div class="col "> --}}
                     <div class="card justify-content-center align-items-center">
                         <div class="discription">
                             <p>Docmerit is a great platform to get and share study resources, especially the resource contributed by past students and who have done similar courses.</p>
@@ -73,14 +73,14 @@
                             <p>Karen</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
     </div>
     <div class="item">
-        <div class="container">
-            <div class="row">
-                <div class="col ">
+        {{-- <div class="container"> --}}
+            {{-- <div class="row"> --}}
+                {{-- <div class="col "> --}}
                     <div class="card justify-content-center align-items-center">
                         <div class="discription">
                             <p>Docmerit is a great platform to get and share study resources, especially the resource contributed by past students and who have done similar courses.</p>
@@ -95,14 +95,14 @@
                             <p>Karen</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
     </div>
     <div class="item">
-        <div class="container">
+        {{-- <div class="container">
             <div class="row">
-                <div class="col ">
+                <div class="col "> --}}
                     <div class="card justify-content-center align-items-center">
                         <div class="discription">
                             <p>Docmerit is a great platform to get and share study resources, especially the resource contributed by past students and who have done similar courses.</p>
@@ -117,21 +117,21 @@
                             <p>Karen</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
     </div>
     
 </div>
 
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="last2button">
             <button>Show All</button>
         </div>
         
     </div>
-</div>
+</div> --}}
 
 
 </section>
@@ -141,29 +141,29 @@
 <section id="foot1">
     <div class="container">
         <div class="row justify-content-center " >
-            <div class="col col-md-2">
+            <div class="col col-md-4">
                 <ul>
                     <li>
                         <h2>Study Tips</h2>
                         </li>
-                    <li><a href="#">Information about earning</a></li>
-                    <li><a href="#">Selling tips</a></li>
-                    <li><a href="#">Copyright</a></li>
+                    <li><a href="/informations">Information about earning</a></li>
+                    {{-- <li><a href="/tips">Selling tips</a></li> --}}
+                    <li><a href="/copyright">Copyright</a></li>
                 </ul>
 
             </div>
-            <div class="col col-md-2">
+            <div class="col col-md-4">
                 <ul>
                     <li>
                         <h2>Information</h2>
                         </li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Subjects</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/subjects">Subjects</a></li>
                     
                 </ul>
 
             </div>
-            <div class="col col-md-2">
+            {{-- <div class="col col-md-2">
                 <ul>
                     <li>
                         <h2>Need Support?</h2>
@@ -173,16 +173,16 @@
                     <li><a href="#">Contact us</a></li>
                 </ul>
 
-            </div>
-            <div class="col col-md-3">
+            </div> --}}
+            <div class="col col-md-4">
                 <ul>
                     <li>
                         <h2>Legal</h2>
                         </li>
-                    <li><a href="#">Privacy Statement</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><h2>Subscribe to Newsletter</h2></li>
-                    <li>
+                    <li><a href="/privacy">Privacy Statement</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                    {{-- <li><h2>Subscribe to Newsletter</h2></li> --}}
+                    {{-- <li>
                         <div class="lastsearch">
                             <div class="search">
                                 <i class="fa fa-search"></i>
@@ -191,11 +191,11 @@
                               </div>
                         </div>
                         
-                    </li>
+                    </li> --}}
                 </ul>
 
             </div>
-            <div class="col col-md-2">
+            {{-- <div class="col col-md-2">
                 <ul>
                     <li>
                         <h2>Latest Blogs</h2>
@@ -205,7 +205,7 @@
                     <li><a href="#">How To Give A Good Presentatio...</a></li>
                 </ul>
 
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -213,7 +213,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col col-md-4">
-                <h1>Follow Us On <i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i><i class="fa fa-twitter" aria-hidden="true"></i></h1>
+                <h1>Follow Us On <i class="fab fa-facebook-f" style="margin-left:20px; margin-right: 20px;"></i><i class="fab fa-linkedin-in" style="margin-left:20px; margin-right: 20px;"></i><i class="fab fa-twitter" style="margin-left:20px; margin-right: 20px;"></i></h1>
             </div>
             <div class="col col-md-4 justify-content-center">
                 <h2>Copyright © 2022 | All rights reserved</h2>

@@ -16,7 +16,7 @@ use App\Http\Controllers\FrontendController;
 ##Forntend Routes
 Route::get('/',[FrontendController::class,'index']);
 
-Route::get('/product/{id}',[FrontendController::class,'product']);
+Route::get('/product/{id}',[FrontendController::class,'product'])->name('product');
 
 Route::get('/subjects',[FrontendController::class,'subjects']);
 
@@ -46,13 +46,29 @@ Route::post('pay', [App\Http\Controllers\PaymentController::class, 'pay'])->name
 Route::get('success', [App\Http\Controllers\PaymentController::class, 'success']);
 Route::get('error', [App\Http\Controllers\PaymentController::class, 'error']);
 
-//DOWNLOAD ROUTES
-Route::get('downloads', [App\Http\Controllers\DownloadController::class, 'index']);
+//Profile ROUTES
+Route::get('profile', [App\Http\Controllers\ProfileController::class, 'profile'])->middleware('auth');
+
+Route::get('upload', [App\Http\Controllers\ProfileController::class, 'upload'])->middleware('auth');
+
+Route::get('downloads', [App\Http\Controllers\DownloadController::class, 'index'])->middleware('auth');
+
+Route::get('download/{id}', [App\Http\Controllers\DownloadController::class, 'download'])->middleware('auth')->name('download');
+
+
+
 
 ##Frontend Routes
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/informations',[FrontendController::class,'informations']);
+
+Route::get('/copyright',[FrontendController::class,'copyright']);
+
+Route::get('/terms',[FrontendController::class,'terms']);
+
+Route::get('/about',[FrontendController::class,'about']);
+
+Route::get('/privacy',[FrontendController::class,'privacy']);
+
 
 require __DIR__.'/auth.php';

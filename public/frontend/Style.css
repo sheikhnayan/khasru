@@ -2,8 +2,8 @@
     background-image: url("picture/home.webp");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
 body {
     width: auto;
 }
@@ -15,6 +15,8 @@ header {
     overflow: hidden;
     padding-top: 20px;
 }
+
+
 /* 
 header .logo {
     float: left;
@@ -29,6 +31,7 @@ header .nev {
 header .nev ul li {
     display: inline-block;
 } */
+
 header .nev ul li a {
     text-decoration: none;
     color: #fff;
@@ -40,28 +43,30 @@ header .nev ul li a {
     margin-right: 20px;
     background-color: orange;
     padding: 5px 10px 5px 10px;
-
 }
 
 * {
     box-sizing: border-box;
 }
+
 .best {
     text-align: center;
     color: #fff;
     margin-top: 350px;
     padding-bottom: 350px;
-    
 }
+
 .best p a {
     text-decoration: none !important;
     color: #fff;
 }
+
 .best h2 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
 }
+
 .best h1 {
     font-size: 17px;
     line-height: 22px;
@@ -69,8 +74,8 @@ header .nev ul li a {
 }
 
 
-
 /* search bar */
+
 
 /* body{
     background-color:#eee;
@@ -78,59 +83,50 @@ header .nev ul li a {
     font-weight: 300;
    } */
 
-   /* .height{
+
+/* .height{
     height: 100vh;
    } */
-   
 
-   .search{
-   position: relative;
-   box-shadow: 0 0 40px rgba(51, 51, 51, .1);
-     
-   }
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
 
-   .search input{
-
+.search input {
     height: 60px;
     text-indent: 25px;
     border: 2px solid #d6d4d4;
+}
 
-
-   }
-
-
-   .search input:focus{
-
+.search input:focus {
     box-shadow: none;
     border: 2px solid blue;
+}
 
-
-   }
-
-   .search .fa-search{
-
+.search .fa-search {
     position: absolute;
     top: 20px;
     left: 16px;
+}
 
-   }
-
-   .search button{
-
+.search button {
     position: absolute;
     top: 5px;
     right: 5px;
     height: 50px;
     width: 110px;
     background: orangered;
+}
 
-   }
-   .best .row {
-       margin-top: 15px;
-       margin-bottom: 15px;
-   }
+.best .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-   /* mid1 section */
+
+/* mid1 section */
+
 #mid3 {
     padding-top: 20px;
     background-image: url(picture/wanted_section.jpg);
@@ -141,6 +137,7 @@ header .nev ul li a {
     color: #fff;
     margin-bottom: 50px;
 }
+
 .mid-con button {
     border: 1px solid orangered;
     padding: 10px 10px 10px 10px;
@@ -148,6 +145,7 @@ header .nev ul li a {
     background-color: orangered;
     border-radius: 5px;
 }
+
 .mid-con h2 {
     font-size: 25px;
     line-height: 35px;
@@ -159,18 +157,21 @@ header .nev ul li a {
     line-height: 22px;
     font-weight: 400;
 }
+
 .last-con1 img {
     width: 80px;
     margin-top: 50px;
     margin-bottom: 20px;
     display: revert;
 }
+
 .last-con2 img {
     width: 80px;
     margin-top: 50px;
     margin-bottom: 20px;
     display: revert;
 }
+
 .last-con3 img {
     width: 80px;
     display: revert;
@@ -181,48 +182,52 @@ header .nev ul li a {
 .last-con h2 {
     font-size: 22px;
     line-height: 24px;
-    font-weight: 700; 
+    font-weight: 700;
     margin-top: 50px;
 }
+
 .last-con p {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .last-con1 h2 {
     font-size: 15px;
     line-height: 24px;
-    font-weight: 700; 
-    
+    font-weight: 700;
 }
+
 .last-con p {
     font-size: 15px;
     line-height: 18px;
-    font-weight: 400; 
+    font-weight: 400;
 }
+
 .last-con2 h2 {
     font-size: 15px;
     line-height: 24px;
-    font-weight: 700; 
-    
+    font-weight: 700;
 }
+
 .last-con p {
     font-size: 15px;
     line-height: 18px;
-    font-weight: 400; 
+    font-weight: 400;
 }
+
 .last-con3 h2 {
     font-size: 15px;
     line-height: 24px;
-    font-weight: 700; 
-    
+    font-weight: 700;
 }
+
 .last-con p {
     font-size: 15px;
     line-height: 18px;
-    font-weight: 400; 
+    font-weight: 400;
 }
+
 #mid4 {
     margin-bottom: 20px;
 }
@@ -236,8 +241,6 @@ header .nev ul li a {
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 30px;
-    
-    
 }
 
 .right-content2 h2 {
@@ -245,8 +248,6 @@ header .nev ul li a {
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 30px;
-    
-    
 }
 
 .left-content p {
@@ -278,12 +279,11 @@ header .nev ul li a {
 .left-content {
     text-align: left;
     margin-right: 100px;
-    
 }
+
 .right-content2 {
     text-align: left;
     margin-left: 100px;
-    
 }
 
 .fp1 {
@@ -294,7 +294,6 @@ header .nev ul li a {
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 30px;
-  
 }
 
 .fp1:hover {
@@ -309,13 +308,11 @@ header .nev ul li a {
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 30px;
-  
 }
 
 .fp2:hover {
     border: 1px solid orangered;
 }
-
 
 .right-content h3 {
     color: #ff4500;
@@ -323,6 +320,7 @@ header .nev ul li a {
     line-height: 29px;
     font-weight: 400;
 }
+
 .left-content p {
     text-align: justify;
 }
@@ -337,7 +335,6 @@ header .nev ul li a {
 .right-content2 p {
     text-align: justify;
 }
-
 
 .right-content p span {
     color: green;
@@ -355,10 +352,8 @@ header .nev ul li a {
     margin-top: 60px;
 }
 
-
 .part1 form {
     text-align: left;
-    
     padding: 20px 20px 40px 20px;
     border: 1px solid #f6f6f6;
     background-color: #2c5592;
@@ -374,7 +369,6 @@ header .nev ul li a {
 
 .part2 form {
     text-align: left;
-    
     padding: 20px 20px 40px 20px;
     border: 1px solid #f6f6f6;
     background-color: #2c5592;
@@ -389,7 +383,6 @@ header .nev ul li a {
 
 .part3 form {
     text-align: left;
-    
     padding: 20px 20px 40px 20px;
     border: 1px solid #f6f6f6;
     background-color: #2c5592;
@@ -463,7 +456,6 @@ header .nev ul li a {
     font-weight: 400;
 }
 
-
 .last1button {
     border: 1px solid orangered;
     padding: 10px 10px 10px 10px;
@@ -477,12 +469,10 @@ header .nev ul li a {
 
 /* testimonial section */
 
-
 .card {
     width: 550px;
     height: 250px;
     text-align: center;
-    
 }
 
 .image img {
@@ -497,19 +487,21 @@ header .nev ul li a {
     width: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
-  }
+}
 
-  .discription {
-      margin-bottom: 20px;
-  }
-
-  .title {
+.discription {
     margin-bottom: 20px;
-  }
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
 #last2 {
     padding-top: 20px;
     background-color: #f5f5f5;
 }
+
 .titlehead {
     margin-top: 20px;
     margin-bottom: 15px;
@@ -517,7 +509,6 @@ header .nev ul li a {
     line-height: 24px;
     font-weight: 700;
 }
-
 
 .last2button {
     border: 1px solid orangered;
@@ -530,7 +521,6 @@ header .nev ul li a {
 }
 
 #populer {
-    
     padding: 0;
 }
 
@@ -543,6 +533,7 @@ header .nev ul li a {
 #foot1 ul li {
     color: #f6f6f6;
 }
+
 #foot1 ul h2 {
     font-size: 16px;
     line-height: 24px;
@@ -582,7 +573,6 @@ header .nev ul li a {
     color: #f6f6f6;
 }
 
-
 #navbarNav ul li a {
     text-decoration: none;
     color: #fff;
@@ -605,19 +595,23 @@ header .navbar-brand {
     width: 100%;
     margin-bottom: 10px;
 }
+
 .second-card .card {
     width: 100%;
     margin-bottom: 10px;
 }
+
 .third-card .card {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
 }
+
 .forth-card .card {
     width: 100%;
     margin-bottom: 10px;
 }
+
 .fifth-card .card {
     width: 100%;
     margin-bottom: 10px;
@@ -630,6 +624,7 @@ header .navbar-brand {
     padding-bottom: 20px;
     border-bottom: 1px solid #ff4500;
 }
+
 .dropdown {
     display: none;
 }
@@ -641,12 +636,9 @@ header .navbar-brand {
 
 /* selling page */
 
-
-
 .selltitle {
     text-align: center;
 }
-
 
 .selltitle h1 {
     font-size: 28px;
@@ -661,16 +653,13 @@ header .navbar-brand {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    
     margin-bottom: 10px;
 }
-
 
 .selltitle p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    
     margin-bottom: 10px;
 }
 
@@ -685,7 +674,6 @@ header .navbar-brand {
     line-height: 18px;
 }
 
-
 .sellvid {
     display: flex;
     margin: 10px 10px 10px 10px;
@@ -697,7 +685,6 @@ header .navbar-brand {
     font-weight: 700;
     line-height: 24px;
 }
-
 
 .secone img {
     width: 80px;
@@ -720,12 +707,10 @@ header .navbar-brand {
     display: revert;
 }
 
-
 .sellcardone {
     border: 1px solid gray;
     padding: 10px 10px 10px 10px;
     margin-top: 10px;
-
 }
 
 .sellcardone h2 {
@@ -781,7 +766,6 @@ header .navbar-brand {
     margin-bottom: 20px;
 }
 
-
 .sellthree-one h2 {
     font-size: 18px;
     font-weight: 700;
@@ -811,13 +795,11 @@ header .navbar-brand {
     margin-bottom: 10px;
 }
 
-
 #sellfour {
     margin-top: 10px;
     background-color: #f1f1f1;
     padding-bottom: 30px;
     padding-top: 30px;
-    
 }
 
 .sellfour-head h1 {
@@ -831,14 +813,12 @@ header .navbar-brand {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    
 }
 
 .sellfour-left1 {
     background-color: #fff;
     padding: 15px 15px 15px 15px;
     margin-top: 15px;
-
 }
 
 .sellfour-left1 h2 {
@@ -846,16 +826,13 @@ header .navbar-brand {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
-
 }
 
 .sellfour-left1 p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-
 }
-
 
 .sellfour-right1 {
     background-color: #fff;
@@ -868,21 +845,18 @@ header .navbar-brand {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
-    
 }
 
 .sellfour-right1 p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    
 }
 
 .sellfour-left2 {
     background-color: #fff;
     margin-top: 15px;
     padding: 15px 15px 15px 15px;
-
 }
 
 .sellfour-left2 h2 {
@@ -890,21 +864,18 @@ header .navbar-brand {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
-
 }
 
 .sellfour-left2 p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-
 }
 
 .sellfour-right2 {
     background-color: #fff;
     margin-top: 15px;
     padding: 15px 15px 15px 15px;
-    
 }
 
 .sellfour-right2 h2 {
@@ -912,26 +883,19 @@ header .navbar-brand {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
-    
 }
 
 .sellfour-right2 p {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    
 }
-
 
 
 /* subject page */
 
-
-
-
-
 .subonetext button {
-    background-image: linear-gradient(255deg,#ff4e00 0,#ff9000 100%);
+    background-image: linear-gradient(255deg, #ff4e00 0, #ff9000 100%);
     border: none;
     padding: 5px 20px;
     color: #fff;
@@ -941,7 +905,6 @@ header .navbar-brand {
     border-radius: 2px;
     font-weight: 600;
     text-align: center;
-    
     line-height: 20px;
 }
 
@@ -974,7 +937,6 @@ header .navbar-brand {
     margin-bottom: 40px;
 }
 
-
 .sub2title {
     font-size: 24px;
     font-weight: 700;
@@ -1002,8 +964,7 @@ header .navbar-brand {
     padding: 5px 20px;
     border-radius: 2px;
     color: #f6f6f6;
-    background-image: linear-gradient(255deg,#ff4e00 0,#ff9000 100%);
-    
+    background-image: linear-gradient(255deg, #ff4e00 0, #ff9000 100%);
 }
 
 .sub2boxl1 button a {
@@ -1011,7 +972,6 @@ header .navbar-brand {
     font-size: 13px;
     font-weight: 600;
     line-height: 20px;
-    
 }
 
 .sub2boxl1 button a:hover {
@@ -1019,7 +979,7 @@ header .navbar-brand {
 }
 
 .sub2boxl1 {
-    border: 2px solid #2f538d ;
+    border: 2px solid #2f538d;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -1048,6 +1008,7 @@ header .navbar-brand {
     background-color: #f05105;
     padding: 5px;
 }
+
 .sub3box {
     padding: 25px;
     cursor: pointer;
@@ -1064,13 +1025,12 @@ header .navbar-brand {
     font-weight: 500;
     line-height: 23px;
     color: #0056b3;
-    
-    
 }
 
 .sub3boxtitle h2 {
     margin-bottom: 20px;
 }
+
 .rating-star {
     color: #f39200;
 }
@@ -1103,7 +1063,7 @@ header .navbar-brand {
 }
 
 .sub4box button {
-    background-image: linear-gradient(255deg,#ff4e00 0,#ff9000 100%);
+    background-image: linear-gradient(255deg, #ff4e00 0, #ff9000 100%);
     border: none;
     padding: 11px 40px;
     color: #fff;

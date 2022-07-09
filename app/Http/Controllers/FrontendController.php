@@ -17,6 +17,8 @@ class FrontendController extends Controller
     public function index()
     {
         $popular = Document::where('popular',1)->latest()->limit(15)->get();
+
+        $latest = Document::where('popular',1)->latest()->limit(15)->get();
         
         $trending = Document::where('trending',1)->latest()->limit(4)->get();
 
@@ -34,7 +36,11 @@ class FrontendController extends Controller
 
     public function subjects()
     {
-        return view('frontend.subjects');
+        $data = Subject::limit(6)->get();
+
+        $datas = Document::limit(10)->get();
+
+        return view('frontend.subjects',compact('data','datas'));
     }
 
     public function subject()
@@ -170,5 +176,30 @@ class FrontendController extends Controller
         $data = Cart::where('id',$id)->delete();
 
         return redirect(route('cart'));
+    }
+
+    public function informations()
+    {
+        return view('frontend.selling');
+    }
+
+    public function copyright()
+    {
+        return view('frontend.copyright');
+    }
+
+    public function terms()
+    {
+        return view('frontend.terms');
+    }
+
+    public function about()
+    {
+        return view('frontend.about');
+    }
+
+    public function privacy()
+    {
+        return view('frontend.privacy');
     }
 }
